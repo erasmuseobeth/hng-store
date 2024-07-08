@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 const config: Config = {
   content: [
@@ -6,6 +7,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  
   theme: {
     extend: {
       backgroundImage: {
@@ -15,6 +17,9 @@ const config: Config = {
       },
       boxShadow: {
         custom: '0px 4px 4px 0px rgba(50, 50, 71, 0.08), 0px 4px 8px 0px rgba(50, 50, 71, 0.06)',
+      },
+      fontFamily: {
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
     },
   },

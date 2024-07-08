@@ -1,6 +1,9 @@
-
+import Hero from "./components/Hero";
 export default function Home() {
   return (
-    <div>This  is hng store hompage</div>
+    <div className="">
+      <Hero/>
+      
+    </div>
   );
 }

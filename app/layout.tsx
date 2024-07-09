@@ -23,12 +23,12 @@ export default function RootLayout({
     <html lang="en">
       <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
       <body className={inter.className}>
-        <header className="flex flex-col items-center">
+        <header className="flex flex-col items-center box-border">
         <Navbar/>
         <SearchBar/>
         </header>
 
-        <main className="min-h-[70vh]">
+        <main className="min-h-screen box-border overflow-x-hidden md:w-full ">
         {children}
         </main>
 

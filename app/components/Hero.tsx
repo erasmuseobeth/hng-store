@@ -1,21 +1,19 @@
-import Image from "next/image";
-import ButtonLink from "./ButtonLink";
-export default function Hero() {
-    return (
-      <div className="flex justify-center items-center gap-5 h-44 rounded-lg bg-[rgb(6,58,136)] w-full">
-      <div className="flex flex-col justify-center items-center">
-        <h2 className="text-xl  text-[#303030] font-bold">Discover the latest in Technology</h2>
-        <p>Explore our exclusive collection of high-prfomance gadgets</p>
-        <div>
-          <ButtonLink href="/product/:id" label="Shop Now" className="bg-[#F45E0C]" />
-        </div>
-      </div>
-      <div>
-        <Image src="/hero-laptop" alt="laptop image" width="185" height="153" className="w-full bg-cover" />
+// components/Hero.tsx
+import Image from 'next/image';
 
-      </div>
-      </div>
-      
-    );
-  }
-  
+const Hero = () => {
+  return (
+    <div className="relative w-full h-[30vh] md:h-screen overflow-hidden shadow-xl custom-grad">
+      <Image 
+        src="/assets/hero.png" 
+        alt="Descriptive Alt Text" 
+        layout="fill" 
+        objectFit="cover" 
+        quality={100} 
+        className='my-4'
+      />
+    </div>
+  );
+};
+
+export default Hero;

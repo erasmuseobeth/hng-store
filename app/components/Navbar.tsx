@@ -1,7 +1,7 @@
 import Link from "next/link";
 import SearchBar from './SearchBar';
 
-import { Logo, User, ShoppingCart, Menu } from './Icons'
+import { Logo, User, ShoppingCart, Menu, Search } from './Icons'
 export default function Navbar() {
   return (
    <nav className="fixed top-0 left-0 right-0 flex items-center justify-between self-stretch gap-[6.25rem] w-full bg-white shadow-nav z-50  md:px-[5.25rem] md:py-[6.5625]">

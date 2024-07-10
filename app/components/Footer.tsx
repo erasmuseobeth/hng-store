@@ -3,7 +3,7 @@ import { Chat, ArrowUp, UserFooter, ArrowRight, Paypal, AmericanExpress, Visa, M
 export default function Footer() {
   return (
 
-    <footer className="flex w-screen flex-col items-start shrink-0 px-6 pt-4 gap-4 bg-[#021736] mb-16 self-stretch justify-center">
+    <footer className="flex flex-col items-start shrink-0 px-6 pt-4 gap-4 bg-[rgb(2,23,54)] mb-16 md:mb-0 self-stretch justify-center w-full max-w-full overflow-x-hidden">
 
 {/* chat */}
       <div className="flex justify-between items-end self-stretch w-full">

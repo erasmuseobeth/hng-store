@@ -2,7 +2,7 @@ import { Home, Shop, Cart, Favourites, Profile } from './Icons';
 import Link from 'next/link';
 const BottomNavbar = () => {
     return ( 
-        <div className="flex justify-between items-start gap-2.5 self-stretch left-0 right-0 p-2.5 fixed bottom-0.5 bg-white">
+        <div className="flex justify-between items-start gap-2.5 self-stretch p-2.5 bg-white w-full max-w-full lg:hidden fixed bottom-0 z-50 overflow-x-hidden">
            <Link href="/" className="flex flex-col justify-center items-center w-8 h-11 gap-1">
          
                 <Home className='size-10'/>

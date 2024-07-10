@@ -3,8 +3,6 @@ import { Inter } from "next/font/google";
 import "@/app/globals.css";
 import Footer  from './components/Footer';
 import Navbar from './components/Navbar';
-import SearchBar from './components/SearchBar';
-
 import BottomNavbar from './components/BottomNavbar'
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,22 +19,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
-      <body className={inter.className}>
-        <header className="flex flex-col items-center box-border">
-        <Navbar/>
-        <SearchBar/>
+      <head>
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
+      </head>
+      <body className={`${inter.className} max-w-full overflow-x-hidden`}>
+        <header className="w-full max-w-full fixed top-0 z-50 overflow-x-hidden">
+          <Navbar />
         </header>
 
-        <main className="min-h-screen box-border overflow-x-hidden md:w-full ">
-        {children}
-        </main>
-
-        <BottomNavbar/>
-
-        <Footer/>
-
-      </body>
-    </html>
+      <main className="pt-16 pb-16 lg:pt-20 lg:pb-0 w-full max-w-full overflow-x-hidden">
+        <div className="container mx-auto px-4 max-w-full lg:px-8">
+          {children}
+        </div>
+      </main>
+      <Footer/>
+      <BottomNavbar />
+    </body>
+  </html>
   );
 }

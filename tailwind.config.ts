@@ -18,8 +18,9 @@ const config: Config = {
           'custom-grad': 'linear-gradient(90deg, rgba(66, 138, 246, 0.09) 0%, rgba(9, 81, 190, 0.30) 54.17%, rgba(66, 138, 246, 0.09) 99.47%)',
       },
       boxShadow: {
-        custom: '0px 4px 4px 0px rgba(50, 50, 71, 0.08), 0px 4px 8px 0px rgba(50, 50, 71, 0.06)',
+        'custom': '0px 4px 4px 0px rgba(50, 50, 71, 0.08), 0px 4px 8px 0px rgba(50, 50, 71, 0.06)',
         'custom1': '-2px 2px 15px -1px rgba(113, 113, 113, 0.12)',
+        'nav':'0px 2px 2px 0px rgba(50, 50, 71, 0.06), 0px 2px 4px 0px rgba(50, 50, 71, 0.06)',
       },
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
